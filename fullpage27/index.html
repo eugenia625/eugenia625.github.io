@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content=""/>
+    <meta name="keywords" content=""/>
+    <meta name="author" content=""/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>fullpage</title>
+    <script src="https://code.jquery.com/jquery-3.5.0.js"></script>
+    <link href="./css/style.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<header class="wrap header">
+    <nav>
+        <h1 class="logo"><img src="./images/logo.png" alt="logo"/></h1>
+        <div id="menu_btn">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+        <ul class="menu">
+            <li>
+                <a href="#">ABOUT</a>
+            </li>
+            <li>
+                <a href="#">MENU</a>
+                <ul class="submenu">
+                    <li>
+                        <a href="#">BRUNCH</a>
+                    </li>
+                    <li>
+                        <a href="#">SALAD</a>
+                    </li>
+                    <li>
+                        <a href="#">COFFEE&DRINK</a>
+                    </li>
+                </ul>
+            </li>
+            <li>
+                <a href="#">EVENT</a>
+            </li>
+        </ul>
+        <div class="sns">
+            <a href="#"><img src="./images/instagram2.png" alt="instagram"/></a>
+            <a href="#"><img src="./images/facebook1.png" alt="facebook"/></a>
+        </div>
+    </nav>
+</header>
+<section class="sec01">
+<h2>sec01</h2>
+    <h3>BREAKFAST <br/>IS READY</h3>
+    <p class="fade">The first meal I eat as soon as I wake up is breakfast</p>
+    <div class="cicleimg"><img src="./images/main_img.png" alt="main"/></div>
+</section>
+<section class="sec02">
+<h2>sec02</h2>
+    <div class="sec_menu">
+        <h5>MENU</h5>
+        <div class="brunch menu_list">
+        <h3>브런치 (BRUNCH)</h3>
+        <p>아이스크림 와플<br/>더 시카고 샌드위치<br/>아이스크림 와플<br/>더 시카고 샌드위치<br/>아이스크림 와플<br/>더 시카고 샌드위치<br/></p>
+        <p>10,000원<br/>10,000원<br/>10,000원<br/>10,000원<br/>10,000원<br/>10,000원</p>
+        </div>
+        <div class="drink menu_list">
+           <h3>커피&음료 (COFFEE&DRINK)</h3>
+        <p>아이스크림 와플<br/>더 시카고 샌드위치<br/>아이스크림 와플<br/>더 시카고 샌드위치<br/>아이스크림 와플<br/>더 시카고 샌드위치<br/></p>
+        <p>10,000원<br/>10,000원<br/>10,000원<br/>10,000원<br/>10,000원<br/>10,000원</p>
+        </div>
+    </div>    
+</section>
+<section class="sec03">
+<h2>세트메뉴</h2>
+    <h3>SET MENU</h3>
+    <div class="btn_wrap">
+		<img onclick="prevFun()" src="./images/slide_lf.png" alt="prev" />
+        <img onclick="nextFun()" src="./images/slide_rg.png" alt="next" />
+	</div>
+<div id="slide">
+	<ul class="slideWrap">
+		<li>
+			<div class="setmenu">
+				<h4>SET No.1</h4>
+                <p>
+                    시그니처 그린샐러드<br/>버섯크림리조또
+                </p>
+                <div></div>
+                <p>
+                    아이스크림 와플
+                </p>
+                <div></div>
+                <p>
+                    아메리카노 1잔
+                </p>
+                <p>10,000원</p>
+                <a href="#">예약하기</a>
+			</div>
+		</li>
+        <li>
+			<div class="setmenu">
+				<h4>SET No.2</h4>
+                <p>
+                    시그니처 그린샐러드<br/>버섯크림리조또
+                </p>
+                <div></div>
+                <p>
+                    아이스크림 와플
+                </p>
+                <div></div>
+                <p>
+                    아메리카노 1잔
+                </p>
+                <p>10,000원</p>
+                <a href="#">예약하기</a>
+			</div>
+		</li>
+        <li>
+			<div class="setmenu">
+				<h4>SET No.3</h4>
+                <p>
+                    시그니처 그린샐러드<br/>버섯크림리조또
+                </p>
+                <div></div>
+                <p>
+                    아이스크림 와플
+                </p>
+                <div></div>
+                <p>
+                    아메리카노 1잔
+                </p>
+                <p>10,000원</p>
+                <a href="#">예약하기</a>
+			</div>
+		</li>
+        <li>
+			<div class="setmenu">
+				<h4>SET No.4</h4>
+                <p>
+                    시그니처 그린샐러드<br/>버섯크림리조또
+                </p>
+                <div></div>
+                <p>
+                    아이스크림 와플
+                </p>
+                <div></div>
+                <p>
+                    아메리카노 1잔
+                </p>
+                <p>10,000원</p>
+                <a href="#">예약하기</a>
+			</div>
+		</li>
+        <li>
+			<div class="setmenu">
+				<h4>SET No.5</h4>
+                <p>
+                    시그니처 그린샐러드<br/>버섯크림리조또
+                </p>
+                <div></div>
+                <p>
+                    아이스크림 와플
+                </p>
+                <div></div>
+                <p>
+                    아메리카노 1잔
+                </p>
+                <p>10,000원</p>
+                <a href="#">예약하기</a>
+			</div>
+		</li>
+	</ul>   
+</div>
+</section>
+<section class="sec04">
+<h2>콘텐츠영역</h2>
+    <div class="con01 con"></div>
+    <div class="con02 con">
+        <h3>Lorem Ipsum</h3>
+        <p>
+            Lorem ipsum dolor sit amet,  consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida. Risus commodo viverra maecenas accumsan lacus vel facilisis.<br/><br/>
+
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida. Risus commodo viverra maecenas accumsan lacus vel facilisis.<br/><br/>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+        </p>
+    </div>
+    <div class="con03 con">
+        <h3>Lorem Ipsum</h3>
+        <p>
+            Lorem ipsum dolor sit amet,  consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida. Risus commodo viverra maecenas accumsan lacus vel facilisis.<br/><br/>
+
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida. Risus commodo viverra maecenas accumsan lacus vel facilisis.<br/><br/>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+        </p>
+    </div>
+    <div class="con04 con"></div>
+</section>
+<section class="sec05">
+    <h2>sec05</h2>
+        <h3>Lorem Ipsum</h3>
+        <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do<br/> eiusmod tempor incididunt ut labore et dolore magna aliqua.<br/>Quis ipsum suspendisse ultrices gravida. Risus commodo viverra <br/>maecenas accumsan lacus vel facilisis.<br/><br/>
+            Lorem ipsum dolor sit amet, consect etur<br/> adipiscing elit, sed do eiusmod tempor<br/> incididunt ut labore et dolore magna aliqua.<br/>Quis ipsum suspendisse ultrices
+        </p>
+        <img src="./images/biscuit.png" alt="teacup"/>
+        <img src="./images/tea-pot.png" alt="teacup"/>
+        <img src="./images/tea-cup.png" alt="teacup"/>
+</section>
+<footer>
+<div class="footer">&copy; 2019 Funny Flakes. All rights reserved</div>
+</footer>
+
+
+<script src="./js/style.js"></script>
+</body>
+</html>

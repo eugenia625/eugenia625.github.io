@@ -1,0 +1,199 @@
+@charset "utf-8";
+@import "common.css";
+@import "layout.css";
+@import url('https://fonts.googleapis.com/css2?family=Nanum+Gothic:wght@400;700;800&display=swap');
+/*font-family: 'Nanum Gothic', sans-serif;*/
+
+a{text-decoration:none;}
+a:link{color:#333;}
+a:visited{color:#333;}
+a:hover{color:#ffd200;}
+a:active{color:#333;}
+
+*{font-family: 'Nanum Gothic', sans-serif;}
+body{width:1440px; margin:0 auto;}
+
+section > h2{
+	width:0; height:0;
+	overflow:hidden;
+	text-indent:-99999px;
+	visibility:hidden;
+	display:none;
+}
+
+/*헤더영역*/
+html{
+	width:1440px;
+	margin:0 auto;
+	position:relative;
+}
+.main_img{
+	width:1440px; height:240px;
+	margin-top:50px;
+	background:url('../images/submain.jpg') no-repeat center bottom/cover;
+}
+.gnb_wrap{
+	padding:20px;
+}
+.gnb_wrap>h1{position:absolute; top:15px;}
+.gnb_wrap>h1>img{width:180px;}
+.gnb::after{
+	content:'';
+	display:block;
+	clear:both;
+	width:0; height:0;
+	visibility:hidden;
+}
+.gnb>li{
+	float:left;
+}
+.gnb{position:absolute; 
+	top:18px;
+	right:0px;
+}	
+.gnb>li>a{
+	margin:0 20px;
+	font-weight:bold;
+	color:#333;
+	font-size:0.8rem;
+	
+}
+.gnb>li>a:hover{color:#ffd200;}
+.gnb>li>a:hover img{color:#ffd200;}
+.gnb>li>a>img{
+	margin-left:100px;
+	width:15px;
+}
+
+.main_img>h3{
+	font-size:1.3rem;
+	text-align:center;
+	margin-top:20px;
+	margin-bottom:10px;
+	color:#fff;
+}
+.main_img>.yellowbox{
+	background:#ffd200;
+	width:50px; height:2px;
+	margin:0 auto;
+	margin-bottom:20px;
+}
+.main_img>p{
+	color:#fff;
+	text-align:center;
+	font-size:0.5rem;
+	line-height:20px;
+}
+
+/*섹션01*/
+#sec01>img{
+	margin:40px 510px 100px;
+}
+#sec01>h4{
+	text-align:center;
+	font-weight:bold;
+	font-size:1.2rem;
+	color:#555;
+	margin:20px 0;
+}
+#sec01>p{
+	text-align:center;
+	color:#4d4d4d;
+	line-height:20px;
+}
+#sec01>div.line01{
+	width:600px;
+	margin:25px auto;
+	border:1px solid #ddd;
+}
+#sec01>div.line02{
+	width:500px;
+	margin:25px auto;
+	border:1px solid #ddd;
+}
+#sec01>div.line03{
+	width:600px;
+	margin:25px auto;
+	border:1px solid #ddd;
+}
+#sec02{
+	width:995px;
+	height:470px;
+	margin:80px auto;
+	display:flex; 
+	flex-flow:row wrap;
+	justify-content:flex-start;
+}
+
+#sec02>.box01{
+	width:640px; height:150px;
+	background:#ff9900;
+}
+#sec02>.box02{
+	width:340px; height:150px;
+	background:#ff9900;
+	margin-left:15px;
+}
+#sec02>.box03{
+	width:200px; height:150px;
+	background:#ff9900;
+	margin-top:10px;
+}
+#sec02>.box04{
+	width:780px; height:150px;
+	background:#ff9900;
+	margin-left:15px;
+	margin-top:10px;
+}
+#sec02>.box05{
+	width:490px; height:150px;
+	background:#ff9900;
+	margin-top:10px;
+}
+#sec02>.box06{
+	width:490px; height:150px;
+	background:#ff9900;
+	margin-left:15px;
+	margin-top:10px;
+
+}
+#sec02>div p{
+	color:#fff;
+	text-align:center;
+	margin-top:50px;
+	font-size:0.8rem;
+	line-height:20px;
+}
+#sec02>div p strong{
+	font-size:1.2rem;
+	font-weight:bold;
+}
+#sec02 .stats{
+	font-size:1.2rem;
+	font-weight:bold;
+	margin-top:60px;
+}
+/*푸터영역*/
+footer{
+	width:100%; height:75px;
+	background:#4c4c4c;
+	position:relative;
+}
+footer>address{
+	color:#fff;
+	font-size:0.5rem;
+	position:absolute;
+	line-height:20px;
+	left:280px;
+	bottom:10px;
+}
+footer img:nth-of-type(1){
+	position:absolute;
+	right:300px;
+	bottom:10px;
+}
+footer img:nth-of-type(2){
+	position:absolute;
+	right:265px;
+	bottom:10px;
+}

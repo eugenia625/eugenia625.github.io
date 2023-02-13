@@ -1,0 +1,372 @@
+@charset "utf-8";
+@import url('https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css');
+
+a{text-decoration:none;}
+a:link,a:visited,a:hover,a:active{color:#333;}
+
+h2{display:none;}
+
+header>form>input{display:none;}
+
+/*header*/
+header{
+	width:100%; 
+	height:100px; 
+	border-bottom:1px solid #b3a686;
+}
+/*검색창*/
+header{position: relative;}
+#pop_sh{
+	width:100%; height: 230px;
+	background:rgba(0,0,0,0.9);
+	z-index: 99999999;
+	position: absolute;
+	top:40px;
+	display: none;
+}
+#pop_sh::after{
+	content:'';
+	display:block;
+	clear:both;
+	width:0; height:0;
+	visibility:hidden;
+}
+#pop_sh>img{
+	width:28px;
+	float: right;
+	margin-top:30px;
+	margin-right: 232px;
+}
+#pop_sh>form{
+	position: absolute;
+	top:48%;
+	left:45%;
+	transform: translateX(-50%);
+
+}
+#pop_sh>form>input{
+	background:none;
+	color:gray;
+	outline: none;
+	border: none;
+	font-size:1.1rem;	
+}
+.line{
+	width:600px;
+	height: 1px;
+	background:#fff;
+	position: absolute;
+	top:60%;
+	left: 50%;
+	transform: translateX(-50%);
+}
+.search_icon>img{width:28px;}
+.search_icon{
+	position: absolute;
+	top:50%;
+	right: 520px;
+}
+/*유틸영역*/
+.util{
+	width:100%; height:40px;
+	background:gray;
+}
+.util_list{
+	width:1420px;
+	margin:0 auto;
+	position:relative;
+}
+.util_list>li:nth-child(1){position:absolute; right:250px;}
+.util_list>li:nth-child(2){position:absolute; right:100px;}
+.util_list>li:nth-child(3){position:absolute; right:0;}
+
+.util_list::after{
+	content:'';
+	display:block;
+	clear:both;
+	width:0; height:0;
+	visibility:hidden;
+}
+.util_list>li{
+	float:left;
+	margin-top:12px;
+}
+.util_list>li>a{
+	color:#fff;
+	font-weight:bold;
+}
+
+.util_list>li>a>div{
+	width:20px; height:20px;
+	background:url('../images/search.png') no-repeat center center/cover;
+	
+	}
+
+/*nav menu*/
+.header>nav{
+	width:100%;
+	position:absolute; 
+	top:0;
+	background:rgba(0,0,0,0);
+}
+.header>nav, .menu{
+	display:flex;
+	justify-content:space-around;
+	align-items:center;
+	flex-wrap:wrap;
+}
+.menu{
+	display:flex !important; 
+	width:1440px; 
+	margin:0 auto; 
+	background:fff;
+}
+	
+.menu>li>a{
+	display:block !important;
+	position:relative;
+	text-align:center;
+	width:200px; 
+	height:60px;
+	line-height:60px;
+	color:#918b8d;
+	font-weight:bold;
+	text-transform:uppercase;
+	}
+.menu>li>a>img{width:70px; margin-top:5px;}
+.menu>li:hover{
+	background:#fff;
+}
+.submenu{border:1px solid #b3a686;}
+.menu>li>a:hover, .submenu>li>a:hover{
+	background:#fff;
+	color:#918b8d; 
+	font-weight:bold;
+}
+.menu::after{
+	content:'';
+	display:none;
+	clear:both;
+	width:0; height:0;
+	visibility:hidden;
+}
+	.menu>li>a::after{
+		content:'';
+		height:3px; width:0%;
+		transition:all .3s;
+	}
+	.menu>li>a:hover::after{
+		content:'';
+		height:3px; width:55%;
+		position:absolute;
+		background:#918b8d;
+		left:50%; bottom:16px;
+		transform:translateX(-50%);
+	}
+	.menu>li:last-child>a:hover::after{
+		height:0px; width:0%;
+		
+	}
+
+	
+.gnb_wrap{
+	width:1420px; 
+	height:60px;
+	margin:0 auto;	
+	
+}
+#menu{width:1420px;}
+#menu::after{
+	content:'';
+	display:block;
+	clear:both;
+	width:0; height:0;
+	visibility:hidden;
+}
+
+#menu>li{
+	float:left;
+	width:16%
+}
+#menu>li>a{
+	display:block;
+	padding-top:20px;
+	box-sizing:border-box;
+	height:60px;
+	font-weight:bold;
+	color:#918b8d;
+	text-align:center;
+	text-transform:uppercase;
+}
+#menu>li:last-child>a{padding-top:6px;}
+#menu>li:last-child>a>img{height:48px;}
+#menu>li:first-child{margin-left:55px;}
+
+/*nav submenu*/
+
+.submenu>li>a{
+	height:60px;
+	background:#fff;
+	display:block;
+	text-align:center;
+	padding-top:0px;
+	box-sizing:border-box;
+	font-weight:bold;
+	color:#918b8d;
+	text-transform:uppercase;
+}
+.submenu>li>a{
+	display:block !important;
+	position:relative;
+	width:190px; 
+	height:60px;
+	line-height:60px;
+	color:#918b8d;
+	font-weight:bold;
+	text-align:center;
+	text-transform:uppercase;
+		
+}
+.submenu{
+	display:none;
+	z-index:99999;
+	position:absolute;
+	background:#fff;
+	width:inherit; /*상위요소 값 상속*/
+}
+
+.submenu>li>a::after{
+		content:'';
+		height:3px; width:0%;
+		transition:all .3s;
+}
+.submenu>li:hover>a::after{
+	content:'';
+	height:3px; width:55%;
+	position:absolute;
+	background:#918b8d;
+	left:50%; bottom:16px;
+	transform:translateX(-50%);
+}
+
+/*sec*/
+.sec{
+	width:1420px;
+	margin:0 auto;
+}
+/*sec01*/
+.sec01>h4{
+	margin-top:50px;
+	font-size:1.8rem;
+}
+.sec01>p{
+	margin-top:25px;
+	background:#f0ede1;
+	padding:25px; 
+	line-height:40px;
+}
+
+/*sec02*/
+.sec02>img{
+	margin-top:60px;
+}
+.sec02>h4{
+	margin-top:30px;
+	font-size:1.8rem;
+}
+.sec02>p{
+	margin-top:25px; 
+	line-height:40px;
+}
+/*sec03*/
+.sec03{
+	padding-bottom:50px;
+	border-bottom:2px dotted #918b8d;;
+}
+.sec03>h4{
+	margin-top:100px;
+	font-size:1.8rem;
+}
+.sec03>.txtimg{
+	display:flex;
+	flex-direction:row-reverse;
+	margin-top:25px;
+}
+.sec03>.txtimg>p{ 
+	line-height:40px;
+	margin-right:20px;
+}
+.sec03>.txtimg>img{
+	width:380px;
+}
+
+/*푸터*/
+footer{
+	margin-top:100px;
+	width:100%;
+	height:300px;
+	background:#918b8d;
+}
+#ft_sec{
+	width:1420px;
+	margin:auto;
+	display:flex;
+	position:relative;
+	
+}
+.ft_list{
+	margin:30px 120px 0;
+}
+.ft_list:first-child{margin-left:0;}
+.ft_list>li{
+	margin-top:20px;
+}
+.ft_list>li>a{color:#fff;}
+
+#ft_sec>.li03>li>a{position: relative;}
+
+/*sns아이콘*/
+#ft_sec>.li03>li.fb>a::after{
+	content:'';
+	display:block;
+	width:20px; height:20px;
+	background:url('../images/sns.png') no-repeat 0px 0px;
+	position:absolute;
+	top:3px;
+	left:-5px;
+}
+#ft_sec>.li03>li.twi>a::after{
+	content:'';
+	display:block;
+	width:20px; height:20px;
+	background:url('../images/sns.png') no-repeat 0px -20px;
+	position:absolute;
+	top:3px;
+	left:-5px;
+}
+#ft_sec>.li03>li.ins>a::after{
+	content:'';
+	display:block;
+	width:20px; height:20px;
+	background:url('../images/sns.png') no-repeat 0px -60px;
+	position:absolute;
+	top:3px;
+	left:-5px;
+}
+#ft_sec>.li03>li.yt>a::after{
+	content:'';
+	display:block;
+	width:20px; height:20px;
+	background:url('../images/sns.png') no-repeat 0px -40px;
+	position:absolute;
+	top:3px;
+	left:-5px;
+}
+
+
+#ft_sec>p{
+	position:absolute; 
+	color:#fff;
+	top:150px; right:0;
+
+}
