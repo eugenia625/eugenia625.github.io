@@ -7,6 +7,8 @@
     <title>euge's</title>
     <link rel="stylesheet" href="./css/common.css"/>
     <link rel="stylesheet" href="./css/login.css"/>
+    <link rel="stylesheet" href="./css/todo.css"/>
+    <link rel="stylesheet" href="./css/calendar.css"/>
 </head>
 <body>
     <div id="pop" class="hidden">
@@ -35,8 +37,24 @@
             <div class="bottom-container">
                 <div class="gocal-wrapper">
                     <div class="calendar-wrap">
-                        <h3>n월</h3>
-                        <div></div>
+                        <div class="year-month">n월</div>
+                        <div class="cal-nav">
+                            <button class="nav-btn go-prev" onclick="prevMonth()">&lt;</button>
+                            <button class="nav-btn go-today" onclick="goToday()">Today</button>
+                            <button class="nav-btn go-next" onclick="nextMonth()">&gt;</button>
+                        </div>
+                        <div class="cal-main">
+                            <div class="days">
+                                <div class="day">일</div>
+                                <div class="day">월</div>
+                                <div class="day">화</div>
+                                <div class="day">수</div>
+                                <div class="day">목</div>
+                                <div class="day">금</div>
+                                <div class="day">토</div>
+                            </div>
+                            <div class="dates"></div>
+                        </div>
                     </div>
                     <div class="goal-wrap">
                         <h3>금주의 목표</h3>
@@ -70,6 +88,7 @@
     <script src="./js/clock.js"></script>
     <script src="./js/weather.js"></script>
     <script src="./js/todo.js"></script>
+    <script src="js/calendar.js"></script>
 
     
 
